@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"] - Portfolio</title>
+	<link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/css/site-bootstrap.css" asp-append-version="true" />
+</head>
+
+<body>
+	<main role="main" class="pb-3">
+		@RenderBody()
+	</main>
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/index.js" asp-append-version="true"></script>
+	@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
